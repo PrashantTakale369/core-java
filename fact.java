@@ -5,18 +5,28 @@ public class fact{
 //  ----Factorial of a given number :
 
 public static int factoral(int n) {
+<<<<<<< HEAD
   int fact1=1;
 
     for(int i=1;i<=n;i++){
       fact1=i*fact1;
     }
   return fact1;
+=======
+ int fact1=1;
+
+  for(int i=1;i<=n;i++){
+  fact1=i*fact1;
+             }
+return fact1;
+>>>>>>> f5e1f75dec0ac4ddb2788dd19e48f7b9664ff807
 }
 
 // ---find the Binomeal coefficent of NCR
 
 
 public static int bincoeff(int n, int r) {
+<<<<<<< HEAD
   int fact_n = factoral(n);
   int fact_r = factoral(r);
   int fact_nmr = factoral(n-r);
@@ -24,23 +34,41 @@ public static int bincoeff(int n, int r) {
   int bincoeff=fact_n/(fact_r*fact_nmr);
         
   return bincoeff;
+=======
+    int fact_n = factoral(n);
+    int fact_r = factoral(r);
+    int fact_nmr = factoral(n-r);
+
+    int bincoeff=fact_n/(fact_r*fact_nmr);
+    
+    return bincoeff;
+>>>>>>> f5e1f75dec0ac4ddb2788dd19e48f7b9664ff807
     
 }
 
 // --- Concept of the Function Overloding
       
 public static int multiplication(int a,int b) {
+<<<<<<< HEAD
   return a*b;
   }
 
   public static int multiplication(int a, int b,int c) {
   return a*b*c;
+=======
+    return a*b;
+        }
+
+public static int multiplication(int a, int b,int c) {
+    return a*b*c;
+>>>>>>> f5e1f75dec0ac4ddb2788dd19e48f7b9664ff807
  
 }
 
 // Check if a number is prime or not
 
 public static int primeornot(int a) {
+<<<<<<< HEAD
   if(a%2==0){
     System.out.print("Numer is not Prime : ");
   }else{
@@ -58,6 +86,27 @@ public static void BinToDeci(int binNum) {
   while (binNum>0) {
   int lastdigit= binNum%10;
   deci=lastdigit*(int) Math.pow(2,pow);
+=======
+    if(a%2==0){
+        System.out.print("Numer is not Prime : ");
+ }
+else{
+System.out.print("Numer is prime : ");
+    }
+    return a;
+
+}
+
+// Convert Bimery TO Decimal.
+    
+public static void BinToDeci(int binNum) {
+    int myNum=binNum;
+    int pow =0;
+    int deci=0;
+    while (binNum>0) {
+    int lastdigit= binNum%10;
+    deci=lastdigit*(int) Math.pow(2,pow);
+>>>>>>> f5e1f75dec0ac4ddb2788dd19e48f7b9664ff807
 
     pow++;
     deci++;
@@ -69,19 +118,22 @@ public static void BinToDeci(int binNum) {
 // Print the Tabel  upto which you want 
 
 public static void tabel(int num) {
-
-  for(int i=1;i<=10;i++){
+for(int i=1;i<=10;i++){
     for(int j=1;j<=num;j++){
-      int result=i*j;
-      System.out.print(+ result);
+    int result=i*j;
+    System.out.print(+ result);
   }  
-  System.out.println();
-    }
+   System.out.println();
+ }
     
 }
     
 
+<<<<<<< HEAD
   public static void main(String[] args) {
+=======
+public static void main(String[] args) {
+>>>>>>> f5e1f75dec0ac4ddb2788dd19e48f7b9664ff807
     Scanner Sc = new Scanner(System.in);
     System.out.println("which no fact you want : ");
     int fact=Sc.nextInt();
