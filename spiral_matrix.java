@@ -20,7 +20,7 @@ while (startROW <= endROW && startCOL<= endCOL) {
         System.out.print(matrix[i][endCOL]+" ");
     }
     
-    //BOTTOM
+    //BOTTOm
 
     for(int j=endCOL;j>=startCOL;j--){
         System.out.print(matrix[endROW][j]+" ");
